@@ -1,4 +1,4 @@
-# Learning to Learn by Gradient Descent by Gradient Descent" by Marcin Andrychowicz et al.
+# Learning to Learn by Gradient Descent by Gradient Descent by Marcin Andrychowicz et al.
 
 "Learning to Learn by Gradient Descent by Gradient Descent" is a research paper by Marcin Andrychowicz et al., which focuses on using gradient descent to optimize 
 the learning process itself. This tutorial will provide a simple overview of the main ideas and concepts presented in the paper, helping you understand how to apply 
