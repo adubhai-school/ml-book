@@ -1,6 +1,6 @@
 # Playing Atari with Deep Reinforcement Learning by Volodymyr Mnih et al.
 
-Concepts required: Deep Learning, Gradient Descent, Convolutional Neural Networks, Reinforcement Learning, Q-Learning,  Experience Replay, Epsilon-Greedy Policy, Bellman Equation, RMSProp
+<sub><sup>Concepts required: Deep Learning, Gradient Descent, Convolutional Neural Networks, Reinforcement Learning, Q-Learning,  Experience Replay, Epsilon-Greedy Policy, Bellman Equation, RMSProp</sup></sub>
 
 Playing Atari with Deep Reinforcement Learning" is a paper published in 2013 by Volodymyr Mnih, et al. The paper presents a novel approach to developing artificial 
 intelligence that is capable of playing Atari games at a superhuman level using deep reinforcement learning.
