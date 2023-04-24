@@ -1,0 +1,21 @@
+\section{What is the kernel trick?}
+The kernel trick is a technique in machine learning that allows SVMs (Support Vector Machines) to work with non-linearly separable data by implicitly mapping the data to a higher-dimensional feature space, without actually computing the high-dimensional feature vectors. The kernel trick avoids the computational cost of explicitly transforming the data to a higher-dimensional feature space while maintaining the accuracy of the SVM algorithm.
+
+The basic idea behind the kernel trick is to define a kernel function that measures the similarity between two data points in the high-dimensional feature space, without actually computing the feature vectors. The kernel function is a mathematical function that takes two data points as input and returns a scalar value that represents the similarity between the data points.
+
+The most commonly used kernel functions are the linear kernel, polynomial kernel, radial basis function (RBF) kernel, and sigmoid kernel. Each kernel function has its own advantages and disadvantages and is suitable for different types of data.
+
+The SVM algorithm using the kernel trick works as follows:
+
+1. Convert the input data into a high-dimensional feature space implicitly using a kernel function.
+
+2. Find the hyperplane that separates the data points with the largest possible margin in the high-dimensional feature space.
+
+3. Introduce a soft margin that allows for some misclassification errors.
+
+4. Train the SVM model by finding the optimal hyperplane parameters that minimize the classification error.
+
+5. Use the trained model to predict the class labels of new data points.
+
+The kernel trick is widely used in many applications, such as image classification, text classification, and bioinformatics. It has the advantage of being able to handle non-linearly separable data effectively while avoiding the computational cost of explicitly transforming the data to a higher-dimensional feature space.
+

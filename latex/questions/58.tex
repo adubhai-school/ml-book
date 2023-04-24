@@ -1,0 +1,11 @@
+\section{What is a deep belief network?}
+A deep belief network (DBN) is a type of neural network that consists of multiple layers of restricted Boltzmann machines (RBMs). It is a generative model that learns to represent the probability distribution of a set of input data in a hierarchical manner, where each layer learns increasingly abstract features of the data.
+
+The DBN consists of an input layer, multiple hidden layers of RBMs, and an output layer. The RBMs in the hidden layers are trained using unsupervised learning to learn a compressed representation of the input data. The output layer is typically a supervised layer, such as a softmax layer for classification tasks.
+
+The DBN is trained layer by layer using a greedy layer-wise unsupervised learning algorithm, where each layer is trained independently using Contrastive Divergence, and the weights are fine-tuned using supervised learning. The learning algorithm uses stochastic gradient descent to find the weights that maximize the log-likelihood of the observed data.
+
+The DBN can be used for a variety of tasks, such as image recognition, speech recognition, and natural language processing. It has many desirable properties, such as the ability to learn high-level abstractions of the input data, the ability to handle missing or incomplete data, and the ability to generate new samples from the learned distribution.
+
+However, the DBN also has some limitations, such as the difficulty of training the model for large datasets, the sensitivity to the choice of hyperparameters, and the need for a large amount of training data. These limitations can be addressed by using more advanced variants of the DBN, such as the Convolutional DBN or the Recurrent DBN.
+

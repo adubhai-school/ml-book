@@ -1,0 +1,13 @@
+\section{What is the difference between batch gradient descent and stochastic gradient descent?}
+The main difference between Batch Gradient Descent and Stochastic Gradient Descent is in the way they update the model parameters during training.
+
+Batch Gradient Descent computes the gradient of the cost function with respect to each parameter using the entire training dataset. It then updates the model parameters by subtracting a small fraction of the gradient from the current values. This process is repeated for every epoch or iteration until the cost function converges to a minimum or a stopping criterion is reached.
+
+Stochastic Gradient Descent, on the other hand, updates the model parameters by computing the gradient of the cost function with respect to each parameter using a random subset of the training data points (called a mini-batch). It then updates the parameters by subtracting a small fraction of the gradient from the current values. This process is repeated for every mini-batch until the cost function converges to a minimum or a stopping criterion is reached.
+
+The main advantages of Batch Gradient Descent are that it can converge to the global minimum of the cost function, and the updates are more stable because they use the entire dataset. However, Batch Gradient Descent can be slow and computationally expensive, especially for large datasets and complex models.
+
+Stochastic Gradient Descent, on the other hand, is much faster and computationally efficient because it updates the model parameters more frequently and uses only a subset of the training data. However, Stochastic Gradient Descent can be sensitive to noise and may not converge to the global minimum of the cost function, but to a local minimum.
+
+To balance the advantages of both Batch Gradient Descent and Stochastic Gradient Descent, researchers have developed a hybrid approach called Mini-Batch Gradient Descent, which updates the model parameters using a small random subset of the training data at every iteration. This approach combines the stability of Batch Gradient Descent with the efficiency of Stochastic Gradient Descent and is widely used in Machine Learning.
+

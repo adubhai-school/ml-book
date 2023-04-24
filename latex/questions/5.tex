@@ -1,0 +1,17 @@
+\section{What is overfitting, and how can it be prevented?}
+Overfitting is a common problem in Machine Learning where a model learns the noise in the training data instead of the underlying pattern. This causes the model to perform well on the training data but poorly on new, unseen data.
+
+Overfitting occurs when the model is too complex relative to the amount of training data or when the training data is not representative of the true distribution of the data. Some common signs of overfitting include high accuracy on the training data but low accuracy on the validation or test data, and high variance or instability in the model's predictions.
+
+To prevent overfitting, we can use several techniques, including:
+
+\subsection{- Regularization:}  Regularization is a technique used to add a penalty term to the loss function during training, which discourages the model from fitting the noise in the data. Common regularization techniques include L1 and L2 regularization, which add a penalty proportional to the absolute or squared values of the model weights, respectively.
+
+\subsection{- Cross-validation:}  Cross-validation is a technique used to evaluate the performance of the model on new, unseen data. By splitting the data into training and validation sets multiple times and averaging the results, we can get a more accurate estimate of the model's generalization performance.
+
+\subsection{- Early stopping:}  Early stopping is a technique used to stop the training process when the validation error starts to increase, indicating that the model is starting to overfit the data. By monitoring the validation error during training, we can stop the training process early and prevent the model from fitting the noise in the data.
+
+\subsection{- Dropout:}  Dropout is a regularization technique used to randomly drop out some of the neurons in the model during training, which helps to reduce overfitting by forcing the model to learn more robust representations of the data.
+
+In summary, overfitting is a common problem in Machine Learning that can be prevented by using techniques like regularization, cross-validation, early stopping, and dropout. By using these techniques, we can improve the generalization performance of the model and avoid fitting the noise in the data.
+

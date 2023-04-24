@@ -1,0 +1,23 @@
+\section{What is t-SNE?}
+t-SNE (t-Distributed Stochastic Neighbor Embedding) is a technique in Machine Learning for data visualization that is used to visualize high-dimensional data in a lower-dimensional space, typically 2D or 3D. t-SNE is widely used in many domains, such as image recognition, natural language processing, and genomics.
+
+The basic idea behind t-SNE is to create a probability distribution over the pairwise similarities between the high-dimensional data points and then to create a similar probability distribution over the pairwise similarities between the low-dimensional representations of the data points. The goal is to minimize the divergence between the two distributions using gradient descent.
+
+The t-SNE algorithm works as follows:
+
+1. Compute a pairwise similarity matrix for the high-dimensional data points.
+
+2. Convert the pairwise similarities into joint probabilities using a Gaussian kernel.
+
+3. Initialize the low-dimensional representations of the data points randomly.
+
+4. Compute a pairwise similarity matrix for the low-dimensional representations using a Student's t-distribution.
+
+5. Convert the pairwise similarities into joint probabilities using a Gaussian kernel.
+
+6. Minimize the divergence between the two probability distributions using gradient descent.
+
+The resulting low-dimensional representations of the data points can be visualized in a 2D or 3D plot, where the distances between the points reflect their pairwise similarities in the high-dimensional space. t-SNE is especially effective at preserving the local structure of the data, meaning that nearby points in the high-dimensional space are likely to be nearby in the low-dimensional space.
+
+t-SNE is a powerful tool for data visualization and can be used to explore and understand high-dimensional data in a more intuitive and interpretable way. It is widely used in many domains, such as image recognition, natural language processing, and genomics, to visualize and analyze complex datasets.
+

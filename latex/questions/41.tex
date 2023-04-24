@@ -1,0 +1,15 @@
+\section{What is dropout, and why is it used?}
+Dropout is a regularization technique used in machine learning and deep learning to prevent overfitting by randomly dropping out or disabling some neurons during the training phase. It works by forcing the network to learn multiple independent representations of the same data, which helps prevent over-reliance on specific features or neurons and improves the generalization of the model.
+
+During the training phase, dropout randomly selects a fraction of the neurons in each layer and sets their output to zero. The probability of dropping out a neuron is a hyperparameter that is typically set to a value between 0.2 and 0.5. The neurons that are not dropped out are scaled by a factor equal to 1/(1 - probability) to ensure that the expected value of the output remains the same.
+
+The main benefits of dropout are:
+
+1. Improved generalization: Dropout prevents overfitting by reducing the co-adaptation of neurons and forcing the network to learn more robust and diverse representations of the data.
+
+2. Reduced sensitivity to noise: Dropout adds noise to the input data and can help the network learn to be more tolerant to noise in the data.
+
+3. Increased performance: Dropout can improve the performance of the network by reducing the effects of vanishing gradients, which can occur in deep neural networks with many layers.
+
+Dropout is widely used in deep learning applications, particularly in computer vision and natural language processing, and has been shown to improve the accuracy and speed of training deep neural networks.
+

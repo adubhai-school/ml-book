@@ -1,0 +1,9 @@
+\section{What is Q-learning?}
+Q-learning is a model-free reinforcement learning algorithm that learns to estimate the optimal action-value function (also known as the Q-function) for a given task. The Q-function provides an estimate of the expected cumulative reward that an agent can obtain by taking a particular action in a given state and following a particular policy.
+
+The Q-learning algorithm works by iteratively updating an estimate of the Q-function based on the observed rewards and state transitions. At each time step, the agent observes the current state and selects an action using an exploration strategy (e.g., epsilon-greedy). The agent then receives a reward and transitions to a new state. Based on the observed reward and state transition, the agent updates its estimate of the Q-function using the Bellman equation.
+
+The Q-learning algorithm is guaranteed to converge to the optimal Q-function under certain conditions, such as the Markov property and the assumption of infinite exploration. However, in practice, the algorithm may converge to a suboptimal policy if the exploration strategy is not well-designed or if the state space is too large.
+
+Q-learning is a widely used algorithm in reinforcement learning and has been applied to a variety of domains, including robotics, game playing, and control systems. It is often used as a baseline algorithm for comparison with other reinforcement learning algorithms.
+

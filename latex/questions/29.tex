@@ -1,0 +1,27 @@
+\section{What is DBSCAN?}
+DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a popular unsupervised machine learning algorithm used for clustering data points based on their density. DBSCAN is particularly useful for clustering datasets with irregular shapes or varying densities.
+
+The DBSCAN algorithm works by grouping together data points that are closely packed together and separating regions of lower density. It defines a cluster as a group of data points that are close to each other and separated from other groups of data points by regions of lower density. The algorithm also identifies noise points that do not belong to any cluster.
+
+The DBSCAN algorithm requires two input parameters:
+
+1. Epsilon ($\epsilon$): the maximum distance between two data points for them to be considered as neighbors.
+
+2. Minimum points (MinPts): the minimum number of data points required to form a cluster.
+
+The DBSCAN algorithm works as follows:
+
+1. Select a random unvisited data point.
+
+2. Determine whether there are at least MinPts data points within distance $\epsilon$ of the selected point. If yes, mark them as neighbors and form a new cluster.
+
+3. Expand the cluster by adding any additional unvisited data points that are within distance $\epsilon$ of any of the existing cluster points.
+
+4. Repeat steps 2 and 3 until all points have been visited.
+
+5. Any remaining unvisited data points are marked as noise points.
+
+The resulting clusters can have any shape, and the algorithm is able to handle noisy data and outliers effectively. Unlike k-means clustering, the number of clusters does not need to be specified in advance.
+
+DBSCAN is widely used in many applications, such as image recognition, customer segmentation, and anomaly detection. It is particularly useful for datasets with varying densities or irregular shapes, and it can handle noisy data and outliers effectively. However, it can be sensitive to the choice of the $\epsilon$ and MinPts parameters and may not be suitable for datasets with high-dimensional features.
+

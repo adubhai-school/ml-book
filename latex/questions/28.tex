@@ -1,0 +1,13 @@
+\section{What is hierarchical clustering?}
+Hierarchical clustering is a type of clustering algorithm in unsupervised machine learning that groups similar data points into clusters based on the distance or similarity between them. The result is a hierarchy of nested clusters that can be represented as a dendrogram, which is a tree-like diagram that shows the clustering results.
+
+The hierarchical clustering algorithm can be divided into two types: agglomerative and divisive.
+
+Agglomerative hierarchical clustering starts by considering each data point as a separate cluster and then iteratively merges the most similar clusters together until all data points belong to a single cluster. The merging process is repeated until a stopping criterion is met, such as a desired number of clusters or a threshold value for the distance between clusters. This approach is also known as bottom-up clustering.
+
+Divisive hierarchical clustering starts with all data points in a single cluster and then iteratively splits the cluster into smaller and more homogeneous clusters until each data point belongs to a separate cluster. The splitting process is repeated until a stopping criterion is met, such as a desired number of clusters or a threshold value for the distance between clusters. This approach is also known as top-down clustering.
+
+Both agglomerative and divisive hierarchical clustering methods can be used with different distance metrics, such as Euclidean distance, Manhattan distance, or cosine similarity, and different linkage criteria, such as single linkage, complete linkage, or average linkage.
+
+Hierarchical clustering is widely used in many applications, such as gene expression analysis, image segmentation, and customer segmentation. It has the advantage of producing a dendrogram that provides a visual representation of the clustering results, which can be useful for interpreting the data and identifying the optimal number of clusters. However, it can be computationally expensive for large datasets and may not be suitable for high-dimensional data.
+

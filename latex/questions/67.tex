@@ -1,0 +1,11 @@
+\section{What is a variational autoencoder (VAE)?}
+A Variational Autoencoder (VAE) is a type of neural network architecture that can be used for unsupervised learning of latent variable models. The VAE is a generative model that learns to generate synthetic data that is similar to the training data.
+
+The VAE consists of two parts: an encoder network and a decoder network. The encoder network takes an input data point and maps it to a low-dimensional latent space, where each point in the latent space represents a different encoding of the input data. The decoder network takes a point in the latent space and maps it back to the original input space, generating a synthetic data point that is similar to the training data.
+
+During training, the VAE tries to optimize two objectives: maximizing the likelihood of the training data, and minimizing the distance between the distribution of the latent variables and a prior distribution (typically a Gaussian distribution). By optimizing these objectives, the VAE learns to generate synthetic data that is similar to the training data, while also ensuring that the distribution of the latent variables is well-behaved and can be used for downstream tasks such as data generation or clustering.
+
+One of the key advantages of the VAE is its ability to learn a compact representation of the input data in the form of the latent variables. This can be useful for dimensionality reduction or for generating synthetic data points that are similar to the training data but do not exactly match any of the input data points.
+
+The VAE has been used in a wide range of applications, including image and video generation, text generation, and data compression. However, training VAEs can be challenging and requires careful tuning of hyperparameters and regularization techniques to ensure that the model learns a good representation of the input data.
+

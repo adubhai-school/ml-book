@@ -1,0 +1,9 @@
+\section{What is beam search?}
+Beam search is a heuristic search algorithm used in natural language processing and other machine learning tasks that involve generating sequences of discrete tokens. It is commonly used in sequence-to-sequence models, such as machine translation and text summarization.
+
+In beam search, the algorithm maintains a beam of the k most promising partial sequences generated so far. At each time step, the algorithm generates the set of possible next tokens based on the current partial sequence, and then selects the k most likely sequences from this set according to a scoring function. The scoring function typically takes into account both the likelihood of the sequence so far and a penalty for longer sequences to prevent the algorithm from generating overly long and complex sequences.
+
+The k most likely sequences are then extended by generating the set of possible next tokens for each sequence, and the process is repeated until the end of the sequence is reached. The final output sequence is the one with the highest score according to the scoring function.
+
+Beam search is a popular alternative to greedy decoding, which simply selects the most likely token at each time step. Beam search allows the algorithm to explore multiple possible paths and select the one with the highest overall score, which can lead to better overall performance. However, the trade-off is that beam search is more computationally expensive than greedy decoding and may require tuning of the beam size parameter to achieve optimal performance.
+

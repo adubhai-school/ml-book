@@ -1,0 +1,11 @@
+\section{What is a recurrent neural network?}
+A recurrent neural network (RNN) is a type of neural network that can process sequential or time-series data by maintaining a hidden state that captures the context or memory of the previous inputs. It is designed to handle inputs of variable length, where the output at each time step depends not only on the current input but also on the previous hidden state.
+
+The RNN consists of a set of recurrent units, each with a set of weights that determine how the input and previous hidden state are combined to compute the current hidden state. The output at each time step is typically computed using a linear combination of the current hidden state and the input, followed by a non-linear activation function.
+
+The RNN can be trained using supervised learning, where the weights are learned by minimizing a loss function between the predicted output and the true output. The RNN can also be trained using unsupervised learning, such as the sequence-to-sequence autoencoder, where the input and output sequences are used to reconstruct the original sequence.
+
+The RNN can be used for a variety of tasks, such as natural language processing, speech recognition, and image captioning. It has many desirable properties, such as the ability to handle inputs of variable length, the ability to capture long-term dependencies, and the ability to generate new sequences from the learned distribution.
+
+However, the RNN also has some limitations, such as the difficulty of training the model for long sequences, the sensitivity to the choice of hyperparameters, and the tendency to forget previous information over time. These limitations can be addressed by using more advanced variants of the RNN, such as the Long Short-Term Memory (LSTM) or the Gated Recurrent Unit (GRU).
+

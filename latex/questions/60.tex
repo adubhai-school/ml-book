@@ -1,0 +1,9 @@
+\section{What is backpropagation through time?}
+Backpropagation through time (BPTT) is a variant of the backpropagation algorithm used to train recurrent neural networks (RNNs). It is a technique for computing the gradient of the loss function with respect to the weights in an RNN by "unrolling" the computation over time.
+
+In BPTT, the RNN is treated as a feedforward network with shared weights across time steps, and the backpropagation algorithm is applied to the unrolled network to compute the gradients. The unrolling process involves replicating the network across time steps, with each copy of the network sharing the same weights.
+
+During training, the input sequence is fed into the RNN one time step at a time, and the output at each time step is compared to the target output using a loss function. The gradients are then computed using BPTT, and the weights are updated using an optimization algorithm such as stochastic gradient descent.
+
+BPTT is a powerful algorithm for training RNNs, as it allows the network to capture long-term dependencies in the input sequence. However, it can suffer from the vanishing gradient problem, where the gradients become very small as they are propagated back in time, making it difficult to learn long-term dependencies. This problem can be addressed by using more advanced variants of the RNN, such as the LSTM or GRU, which are designed to mitigate the vanishing gradient problem.
+

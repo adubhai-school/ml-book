@@ -1,0 +1,11 @@
+\section{Explain the ROC curve.}
+The ROC (Receiver Operating Characteristic) curve is a graphical representation of the performance of a binary classifier that plots the trade-off between the true positive rate (TPR) and the false positive rate (FPR) for different classification thresholds. The ROC curve is a useful tool for evaluating the performance of a binary classifier and comparing the performance of different models.
+
+The ROC curve is created by plotting the TPR on the y-axis and the FPR on the x-axis, where the TPR is the fraction of positive samples that are correctly classified as positive, and the FPR is the fraction of negative samples that are incorrectly classified as positive. The classification threshold is varied from 0 to 1, and the TPR and FPR are calculated for each threshold.
+
+An ideal classifier would have a TPR of 1 and an FPR of 0, resulting in a point in the upper-left corner of the ROC curve. A random classifier would have a diagonal line from (0,0) to (1,1) on the ROC curve. A classifier that performs worse than random would have a ROC curve below the diagonal line, while a classifier that performs better than random would have a ROC curve above the diagonal line.
+
+The area under the ROC curve (AUC) is a commonly used metric to evaluate the overall performance of a binary classifier. The AUC ranges from 0 to 1, where an AUC of 1 indicates a perfect classifier, and an AUC of 0.5 indicates a random classifier. The AUC can be interpreted as the probability that the classifier will rank a randomly chosen positive sample higher than a randomly chosen negative sample.
+
+The ROC curve and AUC can be used to compare the performance of different binary classifiers and to tune the classification threshold of a given model to achieve a desired balance between the TPR and FPR. The ROC curve is a widely used tool in many domains, such as medical diagnosis, fraud detection, and image classification.
+

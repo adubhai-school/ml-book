@@ -1,0 +1,11 @@
+\section{What is word2vec?}
+Word2Vec is an unsupervised learning algorithm for generating word embeddings, introduced by Google researchers in 2013. Word2Vec uses a neural network to learn a low-dimensional representation of words in a corpus that captures their semantic and syntactic relationships.
+
+The basic idea behind Word2Vec is to train a neural network to predict the context of a given word in a corpus. The input to the neural network is a one-hot encoded vector representing the target word, and the output is a set of probability distributions over the vocabulary, indicating the likelihood of each word occurring in the context of the target word.
+
+The network is trained using backpropagation through time (BPTT) to minimize the difference between the predicted probability distributions and the true probability distributions. The resulting word embeddings are learned in such a way that words that are semantically or syntactically similar have similar vector representations.
+
+Word2Vec has two main variants: the continuous bag-of-words (CBOW) model and the skip-gram model. The CBOW model predicts the target word given its context, while the skip-gram model predicts the context given the target word. The skip-gram model is generally considered to be more effective for generating high-quality word embeddings, especially for larger vocabularies.
+
+Word2Vec has become a popular choice for generating word embeddings and is widely used in natural language processing tasks such as language modeling, text classification, and machine translation. Its ability to capture the underlying relationships between words in a corpus has made it a valuable tool for many machine learning applications.
+

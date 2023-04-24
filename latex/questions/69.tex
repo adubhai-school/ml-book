@@ -1,0 +1,9 @@
+\section{What is a sequence-to-sequence model?}
+A sequence-to-sequence (Seq2Seq) model is a type of neural network architecture that is used for tasks involving sequential input and output data, such as machine translation, text summarization, and speech recognition.
+
+A Seq2Seq model consists of two main components: an encoder network and a decoder network. The encoder network takes the input sequence, such as a sentence in one language, and generates a fixed-length representation of the input sequence in the form of a vector, also called the context vector. The decoder network then takes the context vector and generates the output sequence, such as a translation of the input sentence into another language.
+
+The encoder and decoder networks are typically implemented using recurrent neural networks (RNNs), such as Long Short-Term Memory (LSTM) or Gated Recurrent Unit (GRU) networks. During training, the model is trained to minimize the difference between the predicted output sequence and the true output sequence, using techniques such as teacher forcing, where the true output sequence is fed as input to the decoder at each time step.
+
+Seq2Seq models have been used in a wide range of applications, including machine translation, image captioning, and speech recognition. However, they can be computationally expensive to train and may suffer from issues such as vanishing gradients and overfitting. Recent research has focused on developing more efficient and effective Seq2Seq models, such as transformer models, which use self-attention mechanisms to capture long-range dependencies in the input and output sequences.
+

@@ -1,0 +1,15 @@
+\section{What is cross-validation?}
+Cross-validation is a technique used in Machine Learning to evaluate the performance of a model on a limited dataset and to estimate how well the model will generalize to new, unseen data. Cross-validation involves partitioning the available data into multiple subsets or folds, training the model on some of the folds, and testing the model on the remaining fold.
+
+The most common type of cross-validation is k-fold cross-validation, where the data is divided into k equal-sized folds. The model is trained k times, where in each iteration, one of the folds is used as the test set, and the remaining k-1 folds are used as the training set. The performance of the model is then evaluated by averaging the performance over the k iterations.
+
+The benefits of using cross-validation are:
+
+1. It helps to avoid overfitting of the model by evaluating the performance of the model on multiple subsets of the data.
+
+2. It provides a more accurate estimate of the model's performance on new, unseen data than just evaluating the model on a single subset of the data.
+
+3. It can be used to tune the hyperparameters of the model by evaluating the performance of the model on different subsets of the data with different hyperparameters.
+
+Cross-validation is widely used in Machine Learning to evaluate and compare the performance of different models and to select the best model for a given task. The choice of the number of folds and the partitioning of the data into folds depends on the size of the dataset and the complexity of the model, and should be chosen carefully to avoid introducing bias or variance in the performance estimates.
+

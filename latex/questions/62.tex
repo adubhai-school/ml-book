@@ -1,0 +1,11 @@
+\section{What is a gated recurrent unit (GRU)?}
+A Gated Recurrent Unit (GRU) is a type of recurrent neural network (RNN) that is similar to the Long Short-Term Memory (LSTM) network, but with a simplified architecture. Like the LSTM, the GRU is designed to capture long-term dependencies in sequential or time-series data, and is used in applications such as speech recognition, natural language processing, and machine translation.
+
+The GRU consists of a set of memory cells that store information over time, and a set of gates that control the flow of information into and out of the memory cells. The two main gates in a GRU are the reset gate and the update gate.
+
+The reset gate controls the extent to which the previous hidden state is combined with the current input, while the update gate controls the extent to which the new hidden state is updated with the current input and the previous hidden state. These gates allow the GRU to selectively retain or forget information over time, and to adjust the balance between remembering and forgetting based on the input.
+
+During training, the GRU is trained using backpropagation through time (BPTT), where the gradients are computed using the error between the predicted output and the true output. The weights of the GRU are then updated using an optimization algorithm such as stochastic gradient descent.
+
+Compared to the LSTM, the GRU has a simpler architecture and fewer parameters, making it faster to train and more efficient to use in applications with limited computational resources. However, the LSTM has been shown to be more effective in capturing long-term dependencies in some cases, especially when the input sequence is very long or the task requires precise control over memory.
+

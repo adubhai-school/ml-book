@@ -1,0 +1,20 @@
+\section{Explain backpropagation.}
+Backpropagation is a supervised learning algorithm used to train Artificial Neural Networks (ANNs) to learn from input-output data pairs. The goal of backpropagation is to adjust the weights and biases of the network to minimize the difference between the predicted output and the true output.
+
+The backpropagation algorithm works by iteratively computing the gradient of the loss function with respect to the weights and biases of the network using the chain rule of calculus. The gradient of the loss function tells us how much we need to adjust the weights and biases to minimize the loss.
+
+The process of backpropagation can be summarized in the following steps:
+
+1. Initialize the weights and biases of the network with random values.
+2. Forward propagate the input through the network to compute the output.
+3. Compute the difference between the predicted output and the true output, which is the loss or error.
+4. Backward propagate the error through the network to compute the gradient of the loss function with respect to the weights and biases.
+5. Update the weights and biases using the gradient descent optimization algorithm.
+6. Repeat steps 2-5 until the loss function converges to a minimum or a stopping criterion is reached.
+
+During the backward propagation step, the error is first propagated through the output layer to compute the gradient of the loss function with respect to the output weights and biases. The error is then propagated backward through the hidden layers using the chain rule of calculus to compute the gradient of the loss function with respect to the hidden layer weights and biases.
+
+By adjusting the weights and biases of the network using the computed gradient, the backpropagation algorithm gradually improves the accuracy of the network and minimizes the loss function. This process is repeated over multiple epochs or iterations until the network converges to a minimum or a stopping criterion is reached.
+
+In summary, backpropagation is a supervised learning algorithm used to train Artificial Neural Networks by iteratively computing the gradient of the loss function with respect to the weights and biases of the network using the chain rule of calculus. By adjusting the weights and biases of the network using the computed gradient, backpropagation improves the accuracy of the network and minimizes the loss function.
+

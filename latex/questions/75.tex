@@ -1,0 +1,13 @@
+\section{What is a capsule network?}
+A capsule network is a type of neural network architecture that is designed to better capture the spatial relationships between parts of an image or object. It was introduced by Geoffrey Hinton and his colleagues in 2017 as an alternative to traditional convolutional neural networks (CNNs).
+
+In a capsule network, the basic building block is a capsule, which is a group of neurons that represents a specific part or feature of an image or object. Each capsule outputs a vector that represents the probability of the presence of that part or feature and also encodes information about its pose, such as its position, orientation, and size.
+
+The capsules are organized into layers, with each layer representing a hierarchical level of abstraction. The lower-level capsules represent simple parts, such as edges and corners, while the higher-level capsules represent more complex features, such as objects and scenes.
+
+The key innovation of the capsule network is the use of dynamic routing between capsules, which allows the network to explicitly model the spatial relationships between the parts and features. In dynamic routing, the lower-level capsules send their output vectors to the higher-level capsules, and the higher-level capsules use a routing algorithm to determine which lower-level capsules to weight more heavily in their computations. This allows the higher-level capsules to take into account the relative positions and orientations of the lower-level capsules when computing their output.
+
+The capsule network has been shown to achieve state-of-the-art performance on a number of image recognition tasks, such as the MNIST and CIFAR-10 datasets. It has also been applied to other domains, such as natural language processing and medical imaging.
+
+However, the capsule network is still an active area of research, and there are ongoing efforts to improve its performance and scalability for larger datasets and more complex tasks.
+

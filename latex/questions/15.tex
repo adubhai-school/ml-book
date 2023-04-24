@@ -1,0 +1,15 @@
+\section{What is a recurrent neural network?}
+A Recurrent Neural Network (RNN) is a type of Artificial Neural Network (ANN) designed to process sequential data, where the current input depends not only on the current state of the network but also on the previous inputs and outputs. Unlike feedforward neural networks, which have no memory and process each input independently, RNNs can capture temporal dependencies and patterns in the input data by maintaining a hidden state or memory of previous inputs and outputs.
+
+The architecture of a recurrent neural network consists of three types of layers:
+
+Input layer: This layer receives the input data at each time step and passes it on to the hidden layer.
+
+Hidden layer: This layer maintains a hidden state or memory of previous inputs and outputs and processes the current input together with the hidden state to produce the current output. The hidden state is updated at each time step and depends on the current input and the previous hidden state.
+
+Output layer: This layer produces the final output of the network at each time step.
+
+RNNs are trained using the backpropagation through time (BPTT) algorithm, which is a variant of the backpropagation algorithm for feedforward neural networks. The BPTT algorithm works by unrolling the network over time, treating each time step as a separate instance of the network, and backpropagating the error through time to adjust the weights and biases of the network.
+
+RNNs have been successfully applied to many real-world problems, such as natural language processing, speech recognition, and time-series analysis. However, RNNs can suffer from the vanishing gradient problem, where the gradients become very small during backpropagation and the network fails to learn long-term dependencies. To address this issue, researchers have developed many variants of RNNs, such as Long Short-Term Memory (LSTM) and Gated Recurrent Units (GRU), which use more sophisticated architectures to better capture long-term dependencies and avoid the vanishing gradient problem.
+

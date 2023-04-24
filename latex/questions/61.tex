@@ -1,0 +1,13 @@
+\section{What is a long short-term memory (LSTM) network?}
+A Long Short-Term Memory (LSTM) network is a type of recurrent neural network (RNN) that is designed to capture long-term dependencies in sequential or time-series data. The LSTM was introduced to address the problem of vanishing gradients in standard RNNs, which can make it difficult for the network to learn long-term dependencies.
+
+The LSTM consists of a set of memory cells and gates that regulate the flow of information into and out of the memory cells. The memory cells are designed to store information over long periods of time, while the gates control the extent to which information is stored or discarded.
+
+The three main gates in an LSTM are the input gate, the forget gate, and the output gate. The input gate controls the extent to which new input information is stored in the memory cells, while the forget gate controls the extent to which previous information is retained or discarded. The output gate controls the extent to which the stored information is used to generate the output.
+
+During training, the LSTM is trained using backpropagation through time (BPTT), where the gradients are computed using the error between the predicted output and the true output. The weights of the LSTM are then updated using an optimization algorithm such as stochastic gradient descent.
+
+The LSTM has been shown to be effective in a wide range of applications, including speech recognition, natural language processing, and image captioning. Its ability to capture long-term dependencies has made it a popular choice for tasks involving sequential or time-series data.
+
+However, the LSTM is also computationally expensive and can be difficult to train for large datasets. Recent research has focused on developing more efficient variants of the LSTM, such as the Gated Recurrent Unit (GRU), which can provide comparable performance with fewer parameters.
+

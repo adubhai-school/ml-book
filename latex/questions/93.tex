@@ -1,0 +1,13 @@
+\section{What is the difference between on-policy and off-policy learning?}
+On-policy and off-policy learning are two different approaches to reinforcement learning that differ in how they handle the exploration-exploitation tradeoff.
+
+In on-policy learning, the agent learns the value function and policy while following the same policy that is being evaluated. This means that the agent uses the same exploration strategy to collect data for training and for estimating the value function. In other words, the agent updates its policy based on the same policy that it is currently following.
+
+In contrast, in off-policy learning, the agent learns the value function and policy while following a different policy from the one being evaluated. This means that the agent uses a different exploration strategy to collect data for training and for estimating the value function. In other words, the agent updates its policy based on a different policy than the one it is currently following.
+
+The advantage of on-policy learning is that it can be more stable and less sensitive to the choice of exploration strategy, as the agent is always learning from the same policy that it is following. On-policy learning can also be more efficient in environments with high variance in the rewards, as the agent can adapt its exploration strategy to the current policy.
+
+The advantage of off-policy learning is that it can be more sample-efficient and can reuse past experience, as the agent can collect data using a different exploration strategy than the one being evaluated. Off-policy learning can also be more flexible in the choice of exploration strategy, as the agent can explore more aggressively during data collection.
+
+In practice, both on-policy and off-policy learning have their advantages and disadvantages, and the choice of which method to use depends on the specific requirements of the problem at hand.
+

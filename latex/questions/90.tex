@@ -1,0 +1,13 @@
+\section{What is the difference between model-based and model-free reinforcement learning?}
+Model-based and model-free are two different approaches to reinforcement learning that differ in how they estimate the value function of an agent.
+
+Model-based reinforcement learning algorithms learn a model of the environment, which includes a representation of the transition probabilities and the reward function. The model is then used to simulate the behavior of the environment, allowing the agent to plan its actions based on the estimated values of the future states. The value function is then updated based on the observed rewards and the simulated future states.
+
+In contrast, model-free reinforcement learning algorithms do not learn a model of the environment. Instead, they directly estimate the value function based on the observed rewards and state transitions, without explicitly modeling the transition probabilities or reward function. Model-free algorithms use methods such as temporal difference learning or Q-learning to estimate the value function and optimize the policy.
+
+The advantage of model-based reinforcement learning is that it can achieve better sample efficiency than model-free methods, especially in environments with a small state space. It can also make better long-term plans by using the model to simulate future outcomes. However, the downside of model-based methods is that they can be more computationally expensive and may require more memory to store the model.
+
+The advantage of model-free reinforcement learning is that it does not require a model of the environment, making it more robust to model errors or changes in the environment. It is also generally simpler to implement and requires less memory. However, model-free methods may require more samples to learn an accurate value function, especially in large state spaces.
+
+In practice, both model-based and model-free methods have their advantages and disadvantages, and the choice of which method to use depends on the specific requirements of the problem at hand.
+

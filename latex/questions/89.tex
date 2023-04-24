@@ -1,0 +1,9 @@
+\section{What is temporal difference learning?}
+Temporal difference (TD) learning is a type of reinforcement learning algorithm that learns to estimate the optimal value function for a given task through trial and error. Unlike the Q-learning algorithm, which updates its estimates based on the observed reward and next state, the TD-learning algorithm updates its estimates based on the observed reward and the next estimated value.
+
+The TD-learning algorithm works by iteratively updating an estimate of the value function based on the observed rewards and state transitions. At each time step, the agent observes the current state, selects an action using an exploration strategy, and receives a reward and transitions to a new state. Based on the observed reward and next state, the agent updates its estimate of the value function using the TD error, which is the difference between the observed reward plus the estimated value of the next state and the current estimated value of the current state.
+
+TD learning can be viewed as a combination of Monte Carlo methods and dynamic programming methods. It combines the benefits of both methods by using the observed reward to update the value function estimate in a Monte Carlo-like way, and by using the estimated value of the next state to update the value function estimate in a dynamic programming-like way.
+
+TD learning has been used in a variety of applications, including game playing, robotics, and control systems. It is a widely used algorithm in reinforcement learning and is often used in combination with other algorithms, such as Q-learning and policy gradient methods.
+

@@ -1,0 +1,11 @@
+\section{What is self-attention?}
+Self-attention is a mechanism used in neural networks to selectively weigh the importance of different parts of an input sequence in the context of the other parts of the same sequence. This mechanism is used in transformer models, which are often applied to natural language processing tasks such as language translation and text generation.
+
+In self-attention, each position in the input sequence is associated with a query vector, a set of key vectors, and a set of value vectors. These vectors are learned parameters of the model, and are used to compute a set of attention scores for each position in the sequence. The attention scores are then used to compute a weighted sum of the value vectors, which is used to compute the output of the self-attention layer.
+
+The attention scores are computed by taking the dot product of the query vector with each of the key vectors, and scaling the result by a factor of the square root of the dimension of the key vectors. The scaled dot products are then passed through a softmax function to obtain a set of attention weights, which are used to compute the weighted sum of the value vectors.
+
+By computing attention weights for each position in the input sequence, self-attention allows the model to selectively focus on the most relevant parts of the sequence for each output position. This can be particularly useful for tasks such as language translation, where the meaning of a word or phrase may depend on the context of the surrounding words.
+
+Self-attention has been shown to be an effective mechanism for capturing long-range dependencies in sequences, and has been used in a wide range of natural language processing models, including the popular transformer architecture.
+

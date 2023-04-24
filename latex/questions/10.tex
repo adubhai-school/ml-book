@@ -1,0 +1,16 @@
+\section{What is batch gradient descent?}
+Batch Gradient Descent is an optimization algorithm used in Machine Learning to find the optimal parameters of a model by minimizing a cost or loss function. The main idea behind batch gradient descent is to compute the gradient of the cost function with respect to each parameter using the entire training dataset, rather than a subset of data points as in stochastic gradient descent.
+
+The process of batch gradient descent can be summarized in the following steps:
+
+1. Initialize the model parameters with random values.
+2. Calculate the gradient of the cost function with respect to each parameter using the entire training data set.
+3. Update the parameters by subtracting a small fraction of the gradient from the current values.
+4. Repeat steps 2-3 until the cost function converges to a minimum or a stopping criterion is reached.
+
+By computing the gradient over the entire training data set, batch gradient descent can ensure a more accurate estimate of the true gradient and convergence to a global minimum, rather than a local minimum. However, batch gradient descent can also be computationally expensive, especially for large-scale data sets, and may converge slowly or get stuck in saddle points or plateaus.
+
+To address these issues, researchers have developed many variants of batch gradient descent, such as mini-batch gradient descent and stochastic gradient descent, which sample a subset of data points or a random subset of the training data set to compute the gradient more efficiently and update the parameters more frequently.
+
+In summary, batch gradient descent is an optimization algorithm used in Machine Learning to find the optimal parameters of a model by minimizing a cost or loss function using the entire training data set. While it can ensure a more accurate estimate of the gradient and convergence to a global minimum, it can also be computationally expensive and may require modifications or alternatives for large-scale data sets or deep learning models.
+

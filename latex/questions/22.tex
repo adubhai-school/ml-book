@@ -1,0 +1,11 @@
+\section{Explain precision and recall.}
+Precision and Recall are two commonly used performance metrics in Machine Learning for evaluating the performance of binary classification models. They are used to measure the accuracy and completeness of the predictions made by the model.
+
+Precision measures the proportion of true positive predictions out of all positive predictions made by the model. It is defined as the ratio of true positives (TP) to the sum of true positives and false positives (FP), or precision = TP / (TP + FP). In other words, precision measures the proportion of positive predictions that are actually correct. A high precision indicates that the model makes few false positive predictions and is highly accurate.
+
+Recall measures the proportion of true positive predictions out of all actual positive samples in the dataset. It is defined as the ratio of true positives (TP) to the sum of true positives and false negatives (FN), or recall = TP / (TP + FN). In other words, recall measures the proportion of actual positive samples that are correctly identified by the model. A high recall indicates that the model makes few false negative predictions and is highly complete.
+
+The trade-off between precision and recall can be adjusted by varying the classification threshold of the model. A higher threshold will result in higher precision and lower recall, while a lower threshold will result in higher recall and lower precision.
+
+In many applications, both precision and recall are important, and a trade-off must be made between them. The F1 score is a commonly used metric that combines precision and recall into a single score, and is defined as the harmonic mean of precision and recall, or `F1 = 2 * (precision * recall) / (precision + recall)`. The F1 score ranges from 0 to 1, where a higher score indicates better performance of the model.
+

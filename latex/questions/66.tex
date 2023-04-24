@@ -1,0 +1,9 @@
+\section{What is a generative adversarial network (GAN)?}
+A Generative Adversarial Network (GAN) is a type of neural network architecture that consists of two networks: a generator and a discriminator. The goal of a GAN is to learn to generate realistic synthetic data that is similar to the training data.
+
+The generator network takes a random noise vector as input and generates a synthetic sample. The discriminator network takes either a real sample from the training data or a synthetic sample from the generator network as input and predicts whether the input is real or fake. The two networks are trained simultaneously, with the generator network trying to generate synthetic samples that can fool the discriminator network into thinking they are real, and the discriminator network trying to correctly distinguish between real and synthetic samples.
+
+As the two networks are trained iteratively, the generator network learns to generate more realistic samples that can better fool the discriminator network, while the discriminator network becomes better at distinguishing between real and synthetic samples. Eventually, the generator network learns to generate samples that are difficult for the discriminator network to distinguish from real samples.
+
+GANs have been used in a variety of applications, including image and video generation, text-to-image synthesis, and style transfer. One of the key advantages of GANs is their ability to generate realistic and diverse synthetic data that can be used to augment training data and improve the performance of other machine learning models. However, training GANs can be difficult and requires careful tuning of hyperparameters and regularization techniques to avoid mode collapse and other issues.
+

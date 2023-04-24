@@ -1,0 +1,15 @@
+\section{What are the differences between L1 and L2 regularization?}
+L1 and L2 regularization are two common techniques used in Machine Learning to prevent overfitting by adding a penalty term to the loss function during training. The penalty term encourages the model to choose simpler and smoother solutions that generalize better to new, unseen data.
+
+The main differences between L1 and L2 regularization are:
+
+\subsection{- Penalty term:}  L1 regularization adds a penalty term proportional to the absolute value of the model weights, while L2 regularization adds a penalty term proportional to the squared value of the model weights.
+
+\subsection{- Sparsity:}  L1 regularization tends to produce sparse solutions by setting some of the model weights to zero, while L2 regularization tends to produce smooth solutions by shrinking the magnitude of all the weights towards zero.
+
+\subsection{- Robustness:}  L1 regularization is more robust to outliers than L2 regularization because it only considers the magnitude of the weights, while L2 regularization considers the square of the weights.
+
+\subsection{- Computational efficiency:}  L1 regularization is computationally more efficient than L2 regularization because it has a closed-form solution that can be solved using linear programming techniques, while L2 regularization requires iterative methods like gradient descent.
+
+In summary, L1 and L2 regularization are two common techniques used in Machine Learning to prevent overfitting by adding a penalty term to the loss function during training. While L1 regularization produces sparse solutions that are robust to outliers and computationally efficient, L2 regularization produces smooth solutions that are less sparse and less robust to outliers but can be more computationally expensive. The choice between L1 and L2 regularization depends on the specific problem and the properties of the data.
+

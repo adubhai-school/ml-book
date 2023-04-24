@@ -1,0 +1,11 @@
+\section{What is attention?}
+Attention is a mechanism used in neural networks to selectively focus on certain parts of an input sequence when generating an output. The basic idea is to assign a weight or importance to each element in the input sequence based on its relevance to the current output.
+
+Attention is commonly used in sequence-to-sequence models, such as machine translation and text summarization, where the input and output sequences can be of variable lengths. In these models, the encoder network generates a fixed-length representation of the input sequence, which is then used by the decoder network to generate the output sequence. The attention mechanism allows the decoder network to selectively focus on different parts of the input sequence at each time step, depending on the current output.
+
+The attention mechanism typically consists of three components: a query, a set of key-value pairs, and a scoring function. The query represents the current state of the decoder network, while the key-value pairs represent the elements in the input sequence and their corresponding features. The scoring function is used to compute a weight or importance for each key-value pair based on its similarity to the query.
+
+There are several different types of attention mechanisms, such as additive attention and dot-product attention, which differ in the way they compute the scores and the weights. Recent advances in attention-based models include the transformer model, which uses a self-attention mechanism to capture long-range dependencies in the input sequence.
+
+The attention mechanism has been shown to improve the performance of sequence-to-sequence models by allowing them to selectively focus on the most relevant parts of the input sequence. It has become a popular tool in natural language processing and other machine learning applications where attention to specific parts of the input is crucial for achieving high accuracy.
+

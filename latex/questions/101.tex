@@ -1,0 +1,7 @@
+\section{What is a hyperparameter search space?}
+In machine learning, a hyperparameter search space is the range of possible values for the hyperparameters of a model. Hyperparameters are adjustable parameters that determine the behavior and performance of a machine learning algorithm, but unlike model parameters, they are not learned from the data. Instead, they are set before training the model and are typically chosen through a trial-and-error process, known as hyperparameter tuning.
+
+The search space defines the range of values that can be considered for each hyperparameter during the tuning process. For example, the search space for the learning rate hyperparameter of a neural network could be defined as the range [0.001, 0.1]. The search space can also include constraints, such as requiring a hyperparameter to be an integer or a multiple of another hyperparameter.
+
+A well-defined search space is important for efficient hyperparameter tuning, as it determines the range of values that need to be tested to find the optimal hyperparameters. The size of the search space can have a significant impact on the time and computational resources required for hyperparameter tuning. Therefore, it is often necessary to use optimization techniques, such as Bayesian optimization or random search, to efficiently explore the search space and find the best hyperparameters.
+

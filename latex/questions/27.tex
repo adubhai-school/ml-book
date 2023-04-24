@@ -1,0 +1,21 @@
+\section{What is k-means clustering?}
+K-means clustering is a popular unsupervised machine learning algorithm used for clustering, or grouping, similar data points together based on their features. The goal of k-means clustering is to partition a given dataset into k clusters, where k is a user-defined hyperparameter.
+
+The k-means algorithm works as follows:
+
+1. Choose the number of clusters k that you want to divide your data into.
+
+2. Initialize k centroids randomly in the feature space.
+
+3. Assign each data point to the nearest centroid based on the Euclidean distance metric.
+
+4. Update the centroids as the mean of the data points assigned to each centroid.
+
+5. Repeat steps 3 and 4 until the centroids no longer move significantly or a maximum number of iterations is reached.
+
+The result of k-means clustering is a set of k clusters, where each data point belongs to the cluster with the nearest centroid. The algorithm works by minimizing the sum of the squared distances between each data point and its assigned centroid, also known as the within-cluster sum of squares (WCSS).
+
+K-means clustering is widely used in many applications, such as image segmentation, customer segmentation, and anomaly detection. It is a simple yet effective algorithm for identifying structure and patterns in data, and can be easily applied to datasets with many features.
+
+However, k-means clustering has some limitations, such as being sensitive to the initial random centroid selection, requiring the number of clusters k to be specified in advance, and being biased towards spherical or globular clusters. Variants of k-means clustering, such as hierarchical clustering and k-means++, have been developed to address some of these limitations.
+

@@ -1,0 +1,29 @@
+\section{What is PCA, and how is it used for dimensionality reduction?}
+PCA (Principal Component Analysis) is a technique in Machine Learning that is used for dimensionality reduction by transforming a high-dimensional dataset into a lower-dimensional dataset while retaining as much of the original variance as possible. PCA is widely used in many domains, such as image recognition, natural language processing, and genetics.
+
+The basic idea behind PCA is to identify the most important directions, or principal components, in the high-dimensional dataset that explain the maximum amount of variation in the data. The principal components are computed by finding the eigenvectors of the covariance matrix of the data.
+
+The PCA algorithm works as follows:
+
+1. Compute the covariance matrix of the data.
+
+2. Compute the eigenvectors and eigenvalues of the covariance matrix.
+
+3. Sort the eigenvectors in descending order of their corresponding eigenvalues.
+
+4. Choose the top k eigenvectors as the new basis for the lower-dimensional subspace.
+
+5. Transform the data into the new subspace by projecting the original data onto the new basis.
+
+The resulting transformed data has fewer dimensions than the original data but retains as much of the original variation as possible. The new dimensions are linear combinations of the original dimensions, and each dimension represents a principal component that captures the most important variation in the data.
+
+PCA can be used for various purposes, including:
+
+1. Dimensionality reduction: PCA can be used to reduce the dimensionality of a high-dimensional dataset while retaining as much of the original variation as possible. This can help to improve the efficiency and performance of Machine Learning algorithms.
+
+2. Data visualization: PCA can be used to visualize high-dimensional data in lower-dimensional space by projecting the data onto the first two or three principal components. This can help to identify patterns and structures in the data.
+
+3. Feature extraction: PCA can be used to extract the most important features or variables from a dataset and to remove the redundant or irrelevant features. This can help to improve the accuracy and interpretability of Machine Learning models.
+
+In summary, PCA is a widely used technique in Machine Learning for dimensionality reduction by identifying the most important directions in the high-dimensional dataset and transforming the data into a lower-dimensional subspace while retaining as much of the original variation as possible.
+

@@ -1,0 +1,16 @@
+\section{Explain gradient descent.}
+Gradient descent is an optimization algorithm used in Machine Learning to find the optimal parameters of a model by minimizing a cost or loss function. The idea behind gradient descent is to iteratively adjust the model parameters in the direction of the negative gradient of the cost function, which is the steepest descent towards the minimum.
+
+The process of gradient descent can be summarized in the following steps:
+
+1. Initialize the model parameters with random values.
+2. Calculate the gradient of the cost function with respect to each parameter using the training data.
+3. Update the parameters by subtracting a small fraction of the gradient from the current values.
+4. Repeat steps 2 and 3 until the cost function converges to a minimum or a stopping criterion is reached.
+
+The size of the fraction used to update the parameters is called the learning rate. A high learning rate may cause the algorithm to overshoot the minimum, while a low learning rate may cause the algorithm to converge slowly or get stuck in a local minimum.
+
+There are different variants of gradient descent, including batch gradient descent, stochastic gradient descent, and mini-batch gradient descent. Batch gradient descent computes the gradient over the entire training data, while stochastic gradient descent computes the gradient over a single data point at a time. Mini-batch gradient descent computes the gradient over a small batch of data points at a time, which is a compromise between batch and stochastic gradient descent.
+
+Gradient descent is a powerful and widely used optimization algorithm in Machine Learning that allows us to train complex models with large amounts of data. However, it can be sensitive to the choice of learning rate and prone to getting stuck in local minima or saddle points. Therefore, researchers have developed many variants of gradient descent and advanced optimization techniques, such as momentum, Adam, and RMSProp, to address these issues and improve the efficiency and robustness of the algorithm.
+

@@ -1,0 +1,21 @@
+\section{What is transfer learning?}
+Transfer learning is a technique in machine learning and deep learning where a pre-trained model is used as a starting point for a new task or problem, instead of training a new model from scratch. The idea behind transfer learning is to leverage the knowledge and representations learned by a pre-trained model on a large dataset and apply them to a new, related problem with a smaller dataset.
+
+In transfer learning, the pre-trained model is typically a deep neural network that has been trained on a large, general-purpose dataset, such as ImageNet for image classification or Wikipedia for natural language processing. The pre-trained model is then adapted or fine-tuned to the new task or problem by training it on a smaller, task-specific dataset.
+
+There are two main types of transfer learning:
+
+\subsection{- Feature Extraction:}  In this approach, the pre-trained model is used as a fixed feature extractor, where the weights and biases of the pre-trained layers are frozen, and only the weights and biases of the new layers are updated during training. The output of the pre-trained layers is used as input to the new layers, which are trained to perform the new task.
+
+\subsection{- Fine-tuning:}  In this approach, the pre-trained model is used as a starting point, and the weights and biases of some or all of the layers are fine-tuned or adapted during training to better fit the new task. Fine-tuning requires more training data and computational resources but can lead to better performance than feature extraction.
+
+The main advantages of using transfer learning are:
+
+1. Reduced training time and cost: Transfer learning can significantly reduce the amount of time and resources required to train a new model from scratch, especially for tasks with limited data or computational resources.
+
+2. Improved performance: Transfer learning can improve the performance of a new model by leveraging the learned representations of the pre-trained model, which can capture high-level features and patterns that are relevant to the new task.
+
+3. Improved generalization: Transfer learning can improve the generalization of a new model by reducing the risk of overfitting and enabling it to learn more robust and diverse representations of the data.
+
+Transfer learning has been successfully applied in many machine learning and deep learning applications, such as computer vision, natural language processing, and speech recognition. Some popular pre-trained models used in transfer learning include VGG, ResNet, Inception, BERT, and GPT.
+
