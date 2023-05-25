@@ -62,7 +62,7 @@ print(y)
 # Creates a tensor from 1 to 8 with a step of 2
 z = torch.arange(1, 9, 2)
 print(z)
-
+```
 ## torch.linspace
 This function creates a 1D tensor of size steps with elements from start to end spaced evenly.
 
