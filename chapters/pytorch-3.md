@@ -89,3 +89,47 @@ the gradient of the loss with respect to all of our learnable parameters, and op
 
 We now have computed the gradients of a loss function with respect to your model's parameters, and used gradient descent to update the weights 
 and reduce the loss. This process - forward pass, loss computation, backward pass, and parameter update - is essentially what training a neural network consists of.
+
+## Training the Neural Network with Batch Data
+Neural networks are usually trained in batches. First, let's create some dummy input and target data in batches:
+
+```python
+# Create a batch of 64 inputs, each of size 10
+input_batch = torch.randn(64, 10)
+
+# Create a batch of 64 outputs, each of size 1
+target_batch = torch.randn(64, 1)
+```
+Now, we define a loss function and an optimizer, as before:
+
+```python
+# Define a loss function - we'll use Mean Squared Error (MSE)
+criterion = nn.MSELoss()
+
+# Define an optimizer - we'll use Stochastic Gradient Descent (SGD)
+optimizer = torch.optim.SGD(net.parameters(), lr=0.01)  # Learning rate 0.01
+```
+Let's add a training loop that feeds the network with batches of data:
+
+```python
+# Set the number of epochs
+epochs = 10
+
+# Training loop
+for epoch in range(epochs):
+    # Forward pass: Compute predicted y by passing input_batch to the model
+    output_batch = net(input_batch)
+    
+    # Compute the loss
+    loss = criterion(output_batch, target_batch)
+    
+    # Print loss for every 2nd epoch
+    if epoch % 2 == 0:
+        print(f'Epoch: {epoch} Loss: {loss.item()}')
+
+    # Zero gradients, perform a backward pass, and update the weights.
+    optimizer.zero_grad()  # Zero the gradients
+    loss.backward()  # perform a backward pass (backpropagation)
+    optimizer.step()  # Update the weights
+```
+In this training loop, we're feeding the model with 64 inputs (input_batch) at a time and asking it to output predictions (output_batch). We then calculate the loss between the predictions and the actual targets (target_batch), perform backpropagation to compute the gradients, and update the model's weights.
