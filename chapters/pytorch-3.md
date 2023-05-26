@@ -32,8 +32,8 @@ activation function ReLU (Rectified Linear Unit).
 Now, we create an instance of our network, and process some input data.
 
 ```python
-# Create the network (input size 10, hidden size 20, output size 1)
-net = SimpleNet(10, 20, 1)
+# Create the network (input size 10, output size 1)
+net = SimpleNet(10, 1)
 
 # Create a dummy tensor to represent input data
 input_data = torch.randn(10)
